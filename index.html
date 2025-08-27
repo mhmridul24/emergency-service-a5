@@ -41,9 +41,9 @@
     </section>
 
     <!-- Service container -->
-    <section class="w-4/5 grid grid-cols-5 mx-auto py-5 gap-4">
+    <section class="w-4/5 sm:w-95/100 grid grid-cols-5 mx-auto py-5 gap-4 ml-3 sm:ml-6 my-4">
         <!-- All emeergency numbers card -->
-        <section class="grid sm:grid-cols-3 gap-6 col-span-4 ">
+        <section class="grid sm:grid-cols-3 gap-4 sm:gap-5 col-span-3 sm:col-span-4 ">
             <div class=" bg-white rounded-lg shadow-sm p-4">
                 <div class="flex flex-row justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/emergency.png" alt="SOS logo">
@@ -191,8 +191,11 @@
         
         </section>
         <!-- Call history section -->
-        <section class="col-span-1">
-            <h1>Call history</h1>
+        <section class="col-span-2 sm:col-span-1 bg-white w-[24vh] sm:w-[100%]">
+            <div class="flex justify-between p-3 my-2 items-center text-center">
+                <h1 ><i class="fa-regular fa-clock text-gray-500"></i> <span class="font-semibold ">Call History</span> </h1>
+            <button class="btn bg-[#00A63E] rounded-3xl text-white"> Clear</button>
+            </div>
         </section>
     </section>
 
