@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Emergency Service</title>
     <!-- fontawesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Daisy UI and Tailwind -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
 </head>
 
@@ -41,7 +43,7 @@
     </section>
 
     <!-- Service container -->
-    <section class="w-4/5 sm:w-95/100 grid grid-cols-5 mx-auto py-5 gap-4 ml-3 sm:ml-6 my-4">
+    <section class="w-4/5 sm:w-95/100 grid grid-cols-5 mx-auto py-5 gap-4 ml-3 sm:ml-8 my-4">
         <!-- All emeergency numbers card -->
         <section class="grid sm:grid-cols-3 gap-4 sm:gap-5 col-span-3 sm:col-span-4 ">
             <div class=" bg-white rounded-lg shadow-sm p-4">
@@ -190,9 +192,10 @@
 
         
         </section>
+
         <!-- Call history section -->
-        <section class="col-span-2 sm:col-span-1 bg-white w-[24vh] sm:w-[100%]">
-            <div class="flex justify-between p-3 my-2 items-center text-center">
+        <section class="col-span-2 sm:col-span-1 bg-white w-[24vh] sm:w-[100%] shadow-sm rounded-lg">
+            <div class="flex justify-between  p-3 my-2 items-center text-center">
                 <h1 ><i class="fa-regular fa-clock text-gray-500"></i> <span class="font-semibold ">Call History</span> </h1>
             <button class="btn bg-[#00A63E] rounded-3xl text-white"> Clear</button>
             </div>
