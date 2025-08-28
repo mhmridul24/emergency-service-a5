@@ -24,7 +24,7 @@
 
         <div class="flex gap-1 mr-1 items-center sm:gap-3 sm:mr-8">
             <div class="flex items-center bg-[#41FF6B]/10 gap-1 sm:gap-2 p-2 rounded-3xl sm:w-[100px] justify-center">
-                <span class="font-bold">0</span>
+                <span id="card" class="font-bold">0</span>
                 <img class="w-6" src="./assets/heart.png" alt="Heart Logo">
             </div>
             <div class="flex items-center bg-[#41FF6B]/10 gap-1 sm:gap-2 p-2 rounded-3xl sm:w-[100px] justify-center">
@@ -49,7 +49,7 @@
             <div class=" bg-white rounded-lg shadow-sm p-4">
                 <div class="flex flex-row justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/emergency.png" alt="SOS logo">
-                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-regular fa-heart cursor-pointer heart-btn"></i>
                 </div>
                 <h1 class="font-bold text-lg">National Emergency Number</h1>
                 <p class="text-sm">National Emergency</p>
@@ -57,15 +57,15 @@
                 <p class="text-sm bg-gray-100 rounded-xl inline-block px-4 py-1 ">All</p>
                 <!-- Button inside the card -->
                 <div class="grid grid-cols-2 sm:gap-3 p-2 gap-1">
-                   <button class="btn bg-white border-gray-300 text-gray-400 rounded-md"> <i class="fa-regular fa-copy"></i>Copy</button>
-                   <button class="btn bg-green-600 text-white rounded-md"> <i class="fa-solid fa-phone"></i>Call</button> 
+                   <button class="btn bg-white border-gray-300 text-gray-400 rounded-md copy-btn"> <i class="fa-regular fa-copy"></i>Copy</button>
+                   <button class="btn bg-green-600 text-white rounded-md call-btn"> <i class="fa-solid fa-phone"></i>Call</button> 
                 </div>
             </div>
 
             <div class=" bg-white rounded-lg shadow-sm p-4">
                 <div class="flex flex-row justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/police.png" alt="SOS logo">
-                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-regular fa-heart cursor-pointer heart-btn"></i>
                 </div>
                 <h1 class="font-bold text-lg">Police Helpline Number</h1>
                 <p class="text-sm">Police</p>
@@ -81,7 +81,7 @@
             <div class=" bg-white rounded-lg shadow-sm p-4">
                 <div class="flex flex-row justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/fire-service.png" alt="SOS logo">
-                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-regular fa-heart  cursor-pointer heart-btn"></i>
                 </div>
                 <h1 class="font-bold text-lg">Fire Service Number</h1>
                 <p class="text-sm">Fire Service</p>
@@ -97,7 +97,7 @@
             <div class=" bg-white rounded-lg shadow-sm p-4">
                 <div class="flex flex-row justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/ambulance.png" alt="SOS logo">
-                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-regular fa-heart cursor-pointer heart-btn "></i>
                 </div>
                 <h1 class="font-bold text-lg">Ambulance Service</h1>
                 <p class="text-sm">Ambulance</p>
@@ -113,7 +113,7 @@
             <div class=" bg-white rounded-lg shadow-sm p-4">
                 <div class="flex flex-row justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/emergency.png" alt="SOS logo">
-                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-regular fa-heart cursor-pointer heart-btn "></i>
                 </div>
                 <h1 class="font-bold text-lg">Women & Child Helpline</h1>
                 <p class="text-sm">Women & Child Helpline</p>
@@ -129,7 +129,7 @@
             <div class=" bg-white rounded-lg shadow-sm p-4">
                 <div class="flex flex-row justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/emergency.png" alt="SOS logo">
-                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-regular fa-heart cursor-pointer heart-btn"></i>
                 </div>
                 <h1 class="font-bold text-lg">Anti-Corruption Helpline</h1>
                 <p class="text-sm">Anti-Corruption</p>
@@ -145,7 +145,7 @@
             <div class=" bg-white rounded-lg shadow-sm p-4">
                 <div class="flex flex-row justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/emergency.png" alt="SOS logo">
-                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-regular fa-heart cursor-pointer heart-btn"></i>
                 </div>
                 <h1 class="font-bold text-lg">Electricity Helpline</h1>
                 <p class="text-sm">Electricity Outage</p>
@@ -161,7 +161,7 @@
             <div class=" bg-white rounded-lg shadow-sm p-4">
                 <div class="flex flex-row justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/emergency.png" alt="SOS logo">
-                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-regular fa-heart cursor-pointer heart-btn"></i>
                 </div>
                 <h1 class="font-bold text-lg">Brac Helpline</h1>
                 <p class="text-sm">Brac</p>
@@ -177,7 +177,7 @@
             <div class=" bg-white rounded-lg shadow-sm p-4">
                 <div class="flex flex-row justify-between items-center">
                     <img class="w-10 bg-[#FFE3E2] p-2 rounded-lg" src="./assets/emergency.png" alt="SOS logo">
-                    <i class="fa-regular fa-heart "></i>
+                    <i class="fa-regular fa-heart cursor-pointer heart-btn"></i>
                 </div>
                 <h1 class="font-bold text-lg">Bangladesh Railway Helpline </h1>
                 <p class="text-sm">Bangladesh Railway</p>
@@ -202,5 +202,6 @@
         </section>
     </section>
 
+    <script src="index.js"></script>
 </body>
 </html>
