@@ -5,26 +5,40 @@ let heartCount = 0;
 let coinCount = 100;
 let copyCount = 0;
 
-// Get elements from Navbar
-let heartCountElement = document.querySelectorAll("nav .font-bold")[1]; 
-let coinCountElement = document.querySelectorAll("nav .font-bold")[2]; 
-let copyCountElement = document.querySelector("nav button span"); 
+//  Navbar theke elements gula change korar jonno variable set korlam
+let heartCountElement = document.getElementById("heartCount"); 
+let coinCountElement = document.getElementById("coinCount"); 
+let copyCountElement = document.getElementById("copyCount"); 
+
+// console.log(heartCountElement)
 
 // Call History Section
 let historyList = document.createElement("ul");
-let historySection = document.querySelector(".col-span-2");
+let historySection = document.getElementById("callhistory");
 historySection.appendChild(historyList);
 
 // heart button
-let allHearts = document.querySelectorAll(".fa-heart");
+let allHearts = document.getElementsByClassName("heart-btn");
+// let hasan = allHearts.length 
+// console.log(hasan)
 for (let i = 0; i < allHearts.length; i++) {
     allHearts[i].addEventListener("click", function () {
-        heartCount = heartCount + 1;
+        // Check if heart is already red
+        if (allHearts[i].classList.contains("text-red-500")) {
+            // Remove red color
+            allHearts[i].classList.remove("fa-solid","text-red-500");
+            heartCount -= 1; 
+        } else {
+            
+            allHearts[i].classList.add("fa-solid","text-red-500");
+            heartCount += 1; 
+        }
+
         heartCountElement.innerText = heartCount;
     });
 }
 
-//  COPY BUTTON 
+//  copy button 
 let allCopyButtons = document.querySelectorAll(".fa-copy");
 for (let i = 0; i < allCopyButtons.length; i++) {
     allCopyButtons[i].parentElement.addEventListener("click", function () {
@@ -35,16 +49,15 @@ for (let i = 0; i < allCopyButtons.length; i++) {
         // copy to clipboard
         navigator.clipboard.writeText(number);
 
-        // show alert
         alert("Copied: " + number);
 
         // increase counter
-        copyCount = copyCount + 1;
+        copyCount +=  1;
         copyCountElement.innerText = copyCount;
     });
 }
 
-// ===== CALL BUTTON =====
+// CALL BUTTON 
 let allCallButtons = document.querySelectorAll(".fa-phone");
 for (let i = 0; i < allCallButtons.length; i++) {
     allCallButtons[i].parentElement.addEventListener("click", function () {
@@ -52,17 +65,17 @@ for (let i = 0; i < allCallButtons.length; i++) {
         let serviceName = card.querySelector("h1").innerText;
         let serviceNumber = card.querySelector("p.mt-3 span").innerText;
 
-        // check if enough coins
         if (coinCount < 20) {
-            alert("Not enough coins! You need 20 to make a call.");
+            alert("You don't have enough coin! You need 20 to make a call.");
             return;
         }
 
-        // deduct coins
+
+        
         coinCount = coinCount - 20;
         coinCountElement.innerText = coinCount;
 
-        // show alert
+       
         alert("Calling " + serviceName + " at " + serviceNumber);
 
         // add to history
@@ -83,7 +96,7 @@ for (let i = 0; i < allCallButtons.length; i++) {
     });
 }
 
-// ===== CLEAR HISTORY BUTTON =====
+// clear history button
 let clearButton = historySection.querySelector("button");
 clearButton.addEventListener("click", function () {
     historyList.innerHTML = "";

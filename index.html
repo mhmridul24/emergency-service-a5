@@ -24,15 +24,15 @@
 
         <div class="flex gap-1 mr-1 items-center sm:gap-3 sm:mr-8">
             <div class="flex items-center bg-[#41FF6B]/10 gap-1 sm:gap-2 p-2 rounded-3xl sm:w-[100px] justify-center">
-                <span id="card" class="font-bold">0</span>
+                <span id="heartCount" class="font-bold">0</span>
                 <img class="w-6" src="./assets/heart.png" alt="Heart Logo">
             </div>
             <div class="flex items-center bg-[#41FF6B]/10 gap-1 sm:gap-2 p-2 rounded-3xl sm:w-[100px] justify-center">
-                <span class="font-bold">100</span>
+                <span id="coinCount" class="font-bold">100</span>
                 <img class="w-6" src="./assets/coin.png" alt=" Coin Logo">
             </div>
             <!-- Copy button -->
-            <button class="btn bg-[#00A63E] rounded-3xl text-white"> <span>0</span>Copy</button>
+            <button class="btn bg-[#00A63E] rounded-3xl text-white"> <span id="copyCount">0</span>Copy</button>
         </div>
     </nav>
     <!-- Hero Section -->
@@ -194,7 +194,7 @@
         </section>
 
         <!-- Call history section -->
-        <section class="col-span-2 sm:col-span-1 bg-white w-[24vh] sm:w-[100%] shadow-sm rounded-lg">
+        <section id="callhistory" class="col-span-2 sm:col-span-1 bg-white w-[24vh] sm:w-[100%] shadow-sm rounded-lg">
             <div class="flex justify-between  p-3 my-2 items-center text-center">
                 <h1 ><i class="fa-regular fa-clock text-gray-500"></i> <span class="font-semibold ">Call History</span> </h1>
             <button class="btn bg-[#00A63E] rounded-3xl text-white"> Clear</button>
