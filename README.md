@@ -1,3 +1,6 @@
+Live Page Link: https://mhmridul24.github.io/emergency-service-a5/ 
+
+
 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 Answer: getElementById: getting the element by an uniq ID number.
