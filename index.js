@@ -27,7 +27,8 @@ for (let i = 0; i < allHearts.length; i++) {
         if (allHearts[i].classList.contains("text-red-500")) {
             // Remove red color
             allHearts[i].classList.remove("fa-solid","text-red-500");
-            heartCount -= 1; 
+            // heartCount -= 1; 
+            heartCount += 1; 
         } else {
             
             allHearts[i].classList.add("fa-solid","text-red-500");
@@ -76,7 +77,7 @@ for (let i = 0; i < allCallButtons.length; i++) {
         coinCountElement.innerText = coinCount;
 
        
-        alert("Calling " + serviceName + " at " + serviceNumber);
+        alert("Calling " + serviceName + " at" + serviceNumber);
 
         // add to history
          let time = new Date().toLocaleTimeString();
